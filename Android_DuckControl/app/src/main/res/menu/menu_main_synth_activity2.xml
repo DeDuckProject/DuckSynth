@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.iftachy.duckcontrol.MainSynthActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_set_init_preset" android:title="@string/save_as_init_preset_title"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_connect_to_bluetooth" android:title="@string/connect_bt_title"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_about" android:title="@string/about_title"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

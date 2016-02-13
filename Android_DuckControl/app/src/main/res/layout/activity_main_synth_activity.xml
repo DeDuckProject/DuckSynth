@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.iftachy.duckcontrol.MainSynthActivity"
+    android:orientation="vertical"
+    android:background="#ff000000">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/MainControlBar"
+        android:focusableInTouchMode="true"
+        android:focusable="true">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/load_preset_button"
+            android:id="@+id/load_preset_button"
+            android:layout_gravity="center"
+            android:singleLine="false" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_preset_button"
+            android:id="@+id/save_preset_button"
+            android:layout_gravity="center"
+            android:singleLine="false" />
+
+    </LinearLayout>
+
+    <GridLayout
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:id="@+id/main_knob_grid_layout"
+        android:useDefaultMargins="false"
+        android:focusableInTouchMode="false" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/axis_bar"
+        android:gravity="center|bottom"
+        android:focusableInTouchMode="true"></LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal|top"
+        android:src="@drawable/logo_rgb_grad"/>
+
+</LinearLayout>
